@@ -28,13 +28,11 @@ public class EnumDemo {
                 break;
         }
 
-        // ---- Looping through all enum values ----
         System.out.println("\n=== All Days (Day.values()) ===");
         for (Day d : Day.values()) {
             System.out.println(d + " -> weekend? " + d.isWeekend());
         }
 
-        // ---- Enum ordinal and valueOf ----
         System.out.println("\n=== Enum ordinal/valueOf ===");
         System.out.println("Ordinal of WEDNESDAY: " + Day.WEDNESDAY.ordinal());
         Day parsedDay = Day.valueOf("FRIDAY");

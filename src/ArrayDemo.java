@@ -4,7 +4,6 @@ public class ArrayDemo {
 
     public static void main(String[] args) {
 
-        // Declaring and initializing an array
         int[] numbers = {10, 25, 3, 47, 8};
 
         System.out.println("=== Array Basics ===");
@@ -13,17 +12,14 @@ public class ArrayDemo {
         System.out.println("First element: " + numbers[0]);
         System.out.println("Last element: " + numbers[numbers.length - 1]);
 
-        // Modifying an element
         numbers[2] = 99;
         System.out.println("After update, index 2: " + numbers[2]);
 
-        // Looping through an array
         System.out.println("\n=== Looping through array ===");
         for (int i = 0; i < numbers.length; i++) {
             System.out.println("numbers[" + i + "] = " + numbers[i]);
         }
 
-        // Enhanced for-each loop
         System.out.println("\n=== For-each loop ===");
         int sum = 0;
         for (int n : numbers) {
@@ -48,7 +44,6 @@ public class ArrayDemo {
             System.out.println();
         }
 
-        // Array of Strings
         String[] fruits = {"Apple", "Banana", "Mango"};
         System.out.println("\nFruits: " + Arrays.toString(fruits));
     }

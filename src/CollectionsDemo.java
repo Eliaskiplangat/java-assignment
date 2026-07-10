@@ -7,8 +7,6 @@ public class CollectionsDemo {
 
     public static void main(String[] args) {
 
-        // ================= ArrayList =================
-        // Ordered, allows duplicates, resizable list
         System.out.println("=== ArrayList ===");
         ArrayList<String> names = new ArrayList<>();
         names.add("Elias");
@@ -27,8 +25,6 @@ public class CollectionsDemo {
         }
         System.out.println("Size: " + names.size());
 
-        // ================= HashSet =================
-        // Unordered, no duplicates allowed
         System.out.println("\n=== HashSet ===");
         HashSet<String> cities = new HashSet<>();
         cities.add("Nairobi");
@@ -43,8 +39,6 @@ public class CollectionsDemo {
         System.out.println("After removing Kisumu: " + cities);
         System.out.println("Set size: " + cities.size());
 
-        // ================= HashMap =================
-        // Stores data as key-value pairs, keys are unique
         System.out.println("\n=== HashMap ===");
         HashMap<String, Integer> studentScores = new HashMap<>();
         studentScores.put("Elias", 85);

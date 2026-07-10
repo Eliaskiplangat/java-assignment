@@ -1,5 +1,5 @@
 public class Employee {
-    private String name;
+    private final String name;
     protected double baseSalary;
     public String department;
     double bonus;

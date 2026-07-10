@@ -1,10 +1,6 @@
 public class BankAccount {
-
-    // ---- Encapsulation: fields are private, only accessible via methods ----
     private String accountHolder;
     private double balance;
-
-    // ---- Constructor 1: default ----
     public BankAccount() {
         this.accountHolder = "Unknown";
         this.balance = 0.0;
