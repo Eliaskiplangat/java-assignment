@@ -45,7 +45,7 @@ public class BankAccount {
     }
 
     // ---- Method overloading: "withdraw" with different signatures ----
-    public boolean withdraw(double amount) {
+    public boolean withdraw(double amount, boolean b) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
             System.out.println("Withdrew: " + amount);
@@ -55,13 +55,13 @@ public class BankAccount {
         return false;
     }
 
-    public boolean withdraw(double amount, boolean allowOverdraft) {
+    public boolean echo (double amount, boolean allowOverdraft) {
         if (allowOverdraft) {
             balance -= amount;
             System.out.println("Withdrew with overdraft allowed: " + amount);
             return true;
         }
-        return withdraw(amount);
+        return withdraw(amount, true);
     }
 
     public static void main(String[] args) {
@@ -77,7 +77,7 @@ public class BankAccount {
         System.out.println("\n=== Method Overloading (deposit/withdraw) ===");
         acc3.deposit(500);
         acc3.deposit(200, "Salary top-up");
-        acc3.withdraw(300);
+        acc3.withdraw(300, true);
         acc3.withdraw(5000, true); // allows overdraft
 
         System.out.println("\nFinal balance for " + acc3.getAccountHolder()

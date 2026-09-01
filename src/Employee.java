@@ -14,8 +14,10 @@ public class Employee {
         return this.name;
     }
 
-    @Override
     public double calculatePayment() {
         return baseSalary + bonus;
+    }
+
+    public void printPaymentInfo() {
     }
 }
